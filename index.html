@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="hero">
+                <h1>Generate a 
+                    <div class="generate-txt">random password</div>
+                </h1>
+                <p class="extra-txt">Never use an insecure password again.</p>
+            </div>
+            <div class="choose-length">
+                <p class="choose-txt">Set your passwords length here: </p>
+                <input type="text" id="length-el"> 
+            </div>
+            <div class="btn">
+                <div class="toggle">
+                    <p>Tick the checkbox below if you don't want them in your passwords</p>
+                    <div class="toggle-cb">
+                        <p>Numbers: <input type="checkbox" id="numbs"></p>
+                        <p>Symbols: <input type="checkbox" id="symbols"></p>
+                    </div>
+                </div>
+                <button id="generate-el" onclick="generate()">Generate passwords</button>
+                <div class="line"></div>
+            </div>
+            <div class="result">
+                <div class="pass">
+                    <h4 id="pass-1" onclick="copyPass1()"></h4>
+                </div>
+                <div class="pass-right">
+                    <h4 id="pass-2" onclick="copyPass2()"></h4>
+                </div>
+            </div>
+            <h5>Click to the password you want to copy it!</h5>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
